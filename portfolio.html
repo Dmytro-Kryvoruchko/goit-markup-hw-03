@@ -19,17 +19,22 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="header-container">
+      <!-- site-header -->
+      <div class="wrapper header-wrapper">
         <nav class="main-nav">
           <a class="logo-header link-line" href="index.html"
             ><span class="logo-span">Web</span>Studio</a
           >
           <ul class="menu no-style">
             <li class="menu-item">
-              <a class="menu-link link-line" href="index.html">Studio</a>
+              <a class="menu-link link-line current" href="index.html"
+                >Studio</a
+              >
             </li>
             <li class="menu-item">
-              <a class="menu-link link-line current" href="./portfolio.html">Portfolio</a>
+              <a class="menu-link link-line" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li class="menu-item">
               <a class="menu-link link-line" href="index.html">Contacts</a>
@@ -38,27 +43,43 @@
         </nav>
         <ul class="contacts-list no-style">
           <li class="contacts-item">
-            <a class="contacts-link link-line" href="mailto:info@example.com">info@devstudio.com</a>
+            <a class="contacts-link link-line" href="mailto:info@example.com"
+              >info@devstudio.com</a
+            >
           </li>
           <li class="contacts-item">
-            <a class="contacts-link link-line" href="tel:+380991111111">+38 099 111 11 11</a>
+            <a class="contacts-link link-line" href="tel:+380991111111"
+              >+38 099 111 11 11</a
+            >
           </li>
         </ul>
       </div>
     </header>
     <main>
       <section class="portfolio">
-        <h1 class="portfolio-title">Portfolio</h1>
+        <h1 class="visually-hidden">Portfolio</h1>
+
         <ul class="portfolio-filter no-style">
-          <li class="filter-menu"><button class="filter-btn" type="button">All</button></li>
-          <li class="filter-menu"><button class="filter-btn" type="button">Web-sites</button></li>
-          <li class="filter-menu"><button class="filter-btn" type="button">Apps</button></li>
-          <li class="filter-menu"><button class="filter-btn" type="button">Design</button></li>
-          <li class="filter-menu"><button class="filter-btn" type="button">Marketing</button></li>
+          <li class="filter-menu">
+            <button class="filter-btn" type="button">All</button>
+          </li>
+          <li class="filter-menu">
+            <button class="filter-btn" type="button">Web-sites</button>
+          </li>
+          <li class="filter-menu">
+            <button class="filter-btn" type="button">Apps</button>
+          </li>
+          <li class="filter-menu">
+            <button class="filter-btn" type="button">Design</button>
+          </li>
+          <li class="filter-menu">
+            <button class="filter-btn" type="button">Marketing</button>
+          </li>
         </ul>
-        <ul class="portfolio-samples no-style">
-          <div class="sample-card">
-            <li>
+
+        <ul class="no-style">
+          <div class="portfolio-samples wrapper">
+            <li class="portfolio-card">
               <img
                 class="samples-img"
                 src="./images/portfolio/tech.jpg"
@@ -66,12 +87,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="samples-title">Technoduck</h2>
-              <p class="samples-desc">Web-site</p>
+              <div class="portfolio-card-desc">
+                <h2 class="samples-title">Technoduck</h2>
+                <p class="samples-desc">Web-site</p>
+              </div>
             </li>
-          </div>
-          <div class="sample-card">
-            <li>
+            <li class="portfolio-card">
               <img
                 class="samples-img"
                 src="./images/portfolio/poster.jpg"
@@ -79,12 +100,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="samples-title">Poster New Orlean vs Golden Star</h2>
-              <p class="samples-desc">Design</p>
+              <div class="portfolio-card-desc">
+                <h2 class="samples-title">Poster New Orlean vs Golden Star</h2>
+                <p class="samples-desc">Design</p>
+              </div>
             </li>
-          </div>
-          <div class="sample-card">
-            <li>
+            <li class="portfolio-card">
               <img
                 class="samples-img"
                 src="./images/portfolio/seafood.jpg"
@@ -92,12 +113,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="samples-title">Seafood Restaurant</h2>
-              <p class="samples-desc">Apps</p>
+              <div class="portfolio-card-desc">
+                <h2 class="samples-title">Seafood Restaurant</h2>
+                <p class="samples-desc">Apps</p>
+              </div>
             </li>
-          </div>
-          <div class="sample-card">
-            <li>
+            <li class="portfolio-card">
               <img
                 class="samples-img"
                 src="./images/portfolio/headphones.jpg"
@@ -105,12 +126,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="samples-title">Project Prime</h2>
-              <p class="samples-desc">Marketing</p>
+              <div class="portfolio-card-desc">
+                <h2 class="samples-title">Project Prime</h2>
+                <p class="samples-desc">Marketing</p>
+              </div>
             </li>
-          </div>
-          <div class="sample-card">
-            <li>
+            <li class="portfolio-card">
               <img
                 class="samples-img"
                 src="./images/portfolio/project-box.jpg"
@@ -118,12 +139,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="samples-title">Project Boxes</h2>
-              <p class="samples-desc">Apps</p>
+              <div class="portfolio-card-desc">
+                <h2 class="samples-title">Project Boxes</h2>
+                <p class="samples-desc">Apps</p>
+              </div>
             </li>
-          </div>
-          <div class="sample-card">
-            <li>
+            <li class="portfolio-card">
               <img
                 class="samples-img"
                 src="./images/portfolio/inspiration.jpg"
@@ -131,12 +152,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="samples-title">Inspiration has no Borders</h2>
-              <p class="samples-desc">Web-site</p>
+              <div class="portfolio-card-desc">
+                <h2 class="samples-title">Inspiration has no Borders</h2>
+                <p class="samples-desc">Web-site</p>
+              </div>
             </li>
-          </div>
-          <div class="sample-card">
-            <li>
+            <li class="portfolio-card">
               <img
                 class="samples-img"
                 src="./images/portfolio/limited-edition.jpg"
@@ -144,12 +165,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="samples-title">Limited Edition</h2>
-              <p class="samples-desc">Design</p>
+              <div class="portfolio-card-desc">
+                <h2 class="samples-title">Limited Edition</h2>
+                <p class="samples-desc">Design</p>
+              </div>
             </li>
-          </div>
-          <div class="sample-card">
-            <li>
+            <li class="portfolio-card">
               <img
                 class="samples-img"
                 src="./images/portfolio/project-lab.jpg"
@@ -157,12 +178,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="samples-title">Project LAB</h2>
-              <p class="samples-desc">Marketing</p>
+              <div class="portfolio-card-desc">
+                <h2 class="samples-title">Project LAB</h2>
+                <p class="samples-desc">Marketing</p>
+              </div>
             </li>
-          </div>
-          <div class="sample-card">
-            <li>
+            <li class="portfolio-card">
               <img
                 class="samples-img"
                 src="./images/portfolio/growing.jpg"
@@ -170,8 +191,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="samples-title">Growing Business</h2>
-              <p class="samples-desc">Apps</p>
+              <div class="portfolio-card-desc">
+                <h2 class="samples-title">Growing Business</h2>
+                <p class="samples-desc">Apps</p>
+              </div>
             </li>
           </div>
         </ul>
@@ -179,27 +202,35 @@
     </main>
     <footer class="footer">
       <!-- contacts -->
-      <a class="logo-footer link-line" href="index.html"
-        ><span class="logo-span">Web</span>Studio</a
-      >
-      <address>
-        <ul class="no-style">
-          <li>
-            <a
-              class="address-foot link-line"
-              href="https://goo.gl/maps/F33JLBxJRXzu59hU8"
-              target="_blank"
-              rel="noopener noreferrer"
-              >695 Park Ave, New York, NY 10065, <br />
-              United States</a
-            >
-          </li>
-          <li>
-            <a class="contacts-foot link-line" href="mailto:info@example.com">info@example.com</a>
-          </li>
-          <li><a class="contacts-foot link-line" href="tel:+380991111111">+38 099 111 11 11</a></li>
-        </ul>
-      </address>
+      <div class="wrapper footer-wrapper">
+        <a class="logo-footer link-line" href="index.html"
+          ><span class="logo-span">Web</span>Studio</a
+        >
+        <address>
+          <ul class="no-style">
+            <li>
+              <a
+                class="address-foot link-line"
+                href="https://goo.gl/maps/F33JLBxJRXzu59hU8"
+                target="_blank"
+                rel="noopener noreferrer"
+                >695 Park Ave, New York, NY 10065, <br />
+                United States</a
+              >
+            </li>
+            <li>
+              <a class="contacts-foot link-line" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a class="contacts-foot link-line" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

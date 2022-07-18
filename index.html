@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-01</title>
+    <title>goit-markup-hw-02</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,10 +27,14 @@
           >
           <ul class="menu no-style">
             <li class="menu-item">
-              <a class="menu-link link-line current" href="index.html">Studio</a>
+              <a class="menu-link link-line current" href="index.html"
+                >Studio</a
+              >
             </li>
             <li class="menu-item">
-              <a class="menu-link link-line" href="./portfolio.html">Portfolio</a>
+              <a class="menu-link link-line" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li class="menu-item">
               <a class="menu-link link-line" href="index.html">Contacts</a>
@@ -35,10 +43,14 @@
         </nav>
         <ul class="contacts-list no-style">
           <li class="contacts-item">
-            <a class="contacts-link link-line" href="mailto:info@example.com">info@devstudio.com</a>
+            <a class="contacts-link link-line" href="mailto:info@example.com"
+              >info@devstudio.com</a
+            >
           </li>
           <li class="contacts-item">
-            <a class="contacts-link link-line" href="tel:+380991111111">+38 099 111 11 11</a>
+            <a class="contacts-link link-line" href="tel:+380991111111"
+              >+38 099 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -46,51 +58,53 @@
     <main>
       <!-- hero -->
       <section class="hero">
-        <img src="./images/hero-section/hero-overlay.jpg" alt="three persons woark in the ofice" />
         <div class="wrapper">
           <h1 class="hero-title">Effective solutions for your business</h1>
           <button class="order-btn" type="button">Request our service</button>
         </div>
       </section>
 
+      <!-- our best features-->
       <section class="wrapper">
-        <!-- our best features-->
-        <h2 class="visually-hidden">Our best features</h2>
-        <ul class="no-style">
-          <li>
-            <h3 class="features-title">Attention to details</h3>
-            <p class="features-desc">
-              We go into all the details and processes of your business to develop a customized
-              solution.
-            </p>
-          </li>
-          <li>
-            <h3 class="features-title">Punctuality</h3>
-            <p class="features-desc">
-              With us, you can feel safe and secure. An important principle of the company: respect
-              your time and respect the agreed deadlines.
-            </p>
-          </li>
-          <li>
-            <h3 class="features-title">Planning</h3>
-            <p class="features-desc">
-              You will be able to observe and participate in every phase of solution development and
-              implementation.
-            </p>
-          </li>
-          <li>
-            <h3 class="features-title">Modern technologies</h3>
-            <p class="features-desc">
-              We use innovative tools to solve assigned tasks. It's time to simplify work processes.
-            </p>
-          </li>
-        </ul>
+        <div class="features">
+          <h2 class="visually-hidden">Our best features</h2>
+          <ul class="features-list no-style">
+            <li class="features-item">
+              <h3 class="features-title">Attention to details</h3>
+              <p class="features-desc">
+                We go into all the details and processes of your business to
+                develop a customized solution.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-title">Punctuality</h3>
+              <p class="features-desc">
+                With us, you can feel safe and secure. An important principle of
+                the company: respect your time and respect the agreed deadlines.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-title">Planning</h3>
+              <p class="features-desc">
+                You will be able to observe and participate in every phase of
+                solution development and implementation.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-title">Modern technologies</h3>
+              <p class="features-desc">
+                We use innovative tools to solve assigned tasks. It's time to
+                simplify work processes.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
+      <!-- what we do -->
       <section class="what-we-do wrapper">
-        <!-- what we do -->
         <h2 class="suptitle">What we do</h2>
-        <ul class="what-we-do-img no-style">
-          <li>
+        <ul class="what-we-do-gallery no-style">
+          <li class="what-we-do-img">
             <img
               src="./images/what-we-do/box-1.jpg"
               alt="human hands on the keybord and a tablet with some code"
@@ -98,7 +112,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="what-we-do-img">
             <img
               src="./images/what-we-do/box-2.jpg"
               alt="human hands with a smartphone and a notebook with smartphones on the screen"
@@ -106,7 +120,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="what-we-do-img">
             <img
               src="./images/what-we-do/box-3.jpg"
               alt="a tablet with a color palette on the screen and human hands with stylus"
@@ -121,49 +135,53 @@
         <div class="wrapper">
           <h2 class="suptitle">Our team</h2>
           <ul class="team-profiles no-style">
-            <li>
+            <li class="team-card">
               <img
                 class="team-photo"
                 src="./images/our-team/ihor.jpg"
                 alt="Igor Demianenko foto"
                 width="270"
-                height="260"
               />
-              <h3 class="team-name" lang="ru">Игорь Демьяненко</h3>
-              <p class="team-desc">Product Designer</p>
+              <div class="team-card-desc">
+                <h3 class="team-name" lang="ru">Игорь Демьяненко</h3>
+                <p class="team-desc">Product Designer</p>
+              </div>
             </li>
-            <li>
+            <li class="team-card">
               <img
                 class="team-photo"
                 src="./images/our-team/olga.jpg"
                 alt="Olga Repina foto"
                 width="270"
-                height="260"
               />
-              <h3 class="team-name" lang="ru">Ольга Репина</h3>
-              <p class="team-desc">Frontend Developer</p>
+              <div class="team-card-desc">
+                <h3 class="team-name" lang="ru">Ольга Репина</h3>
+                <p class="team-desc">Frontend Developer</p>
+              </div>
             </li>
-            <li>
+            <li class="team-card">
               <img
                 class="team-photo"
                 src="./images/our-team/mykola.jpg"
                 alt="Mykola Tarasov foto"
                 width="270"
-                height="260"
               />
-              <h3 class="team-name" lang="ru">Николай Тарасов</h3>
-              <p class="team-desc">Marketing</p>
+              <div class="team-card-desc">
+                <h3 class="team-name" lang="ru">Николай Тарасов</h3>
+                <p class="team-desc">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="team-card">
               <img
                 class="team-photo"
                 src="./images/our-team/mikhail.jpg"
                 alt="Mikhail Ermakov foto"
                 width="270"
-                height="260"
               />
-              <h3 class="team-name" lang="ru">Михаил Ермаков</h3>
-              <p class="team-desc">UI Designer</p>
+              <div class="team-card-desc">
+                <h3 class="team-name" lang="ru">Михаил Ермаков</h3>
+                <p class="team-desc">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -171,7 +189,7 @@
     </main>
     <footer class="footer">
       <!-- contacts -->
-      <div class="wrapper">
+      <div class="wrapper footer-wrapper">
         <a class="logo-footer link-line" href="index.html"
           ><span class="logo-span">Web</span>Studio</a
         >
@@ -188,10 +206,14 @@
               >
             </li>
             <li>
-              <a class="contacts-foot link-line" href="mailto:info@example.com">info@example.com</a>
+              <a class="contacts-foot link-line" href="mailto:info@example.com"
+                >info@example.com</a
+              >
             </li>
             <li>
-              <a class="contacts-foot link-line" href="tel:+380991111111">+38 099 111 11 11</a>
+              <a class="contacts-foot link-line" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
             </li>
           </ul>
         </address>
