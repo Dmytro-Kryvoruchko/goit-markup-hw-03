@@ -7,6 +7,7 @@
   --primary-back-color: #2f303a;
   --secondary-back-color: #f5f4fa;
   --accent-color: #2196f3;
+  --hover-focus-color: #188ce8;
   --primary-white-color: #ffffff;
   --main-border-color: #eeeeee;
 
@@ -21,11 +22,36 @@ body {
   background-color: var(--primary-white-color);
   color: var(--title-text-color);
 }
-.wrapper {
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.address-foot,
+.contacts-foot {
+  font-style: normal;
 }
 .visually-hidden {
   position: absolute;
@@ -40,53 +66,32 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-h1,
-h2,
-h3,
-h4,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-ul,
-ol {
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-left: 0;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 button {
   display: block;
   margin: 0 auto;
 
   border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.current {
-  color: var(--accent-color);
-}
-
-.no-style {
+.list-no-style {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 .link-line {
   text-decoration: none;
 }
-
 /* /BASIC SETTS */
 
 /* HEADER */
 .page-header {
-  background-color: var(--primary-white-color);
-  border: 1px solid var(--main-border-color);
+  border-bottom: 1px solid var(--main-border-color);
 }
 
-.header-wrapper {
+.header-container {
   display: flex;
   align-items: center;
 }
@@ -139,6 +144,9 @@ button {
   color: var(--accent-color);
 }
 
+.current {
+  color: var(--accent-color);
+}
 .contacts-list {
   display: flex;
   margin-left: auto;
@@ -184,8 +192,7 @@ button {
 
 .order-btn {
   min-width: 200px;
-  padding: 10px 20px;
-  border-radius: 4px;
+  padding: 10px 32px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -198,16 +205,12 @@ button {
 
 .order-btn:hover,
 .corder-btn:focus {
-  color: var(--accent-color);
-  background-color: var(--primary-white-color);
+  background-color: var(--hover-focus-color);
 }
 /* /HERO */
 
 /* BEST FEATURES SECTION */
 
-.features {
-  padding: 94px 0;
-}
 .features-list {
   display: flex;
   flex-wrap: wrap;
@@ -238,10 +241,13 @@ button {
 
 /* WHAT WE DO SECTION */
 
+.what-we-do {
+  padding-top: 0;
+}
+
 .what-we-do-gallery {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
   gap: 30px;
 }
 
@@ -260,8 +266,6 @@ button {
 /* OUR TEAM SECTION */
 .team {
   background-color: var(--secondary-back-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-profiles {
@@ -278,11 +282,7 @@ button {
 .team-photo {
 }
 .team-card {
-  display: flex;
-  flex-direction: column;
   width: 270px;
-  align-items: center;
-
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -310,23 +310,19 @@ button {
 /* PORTFOLIO PAGE */
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
-  background-color: var(--primary-white-color);
 }
 
 .portfolio-filter {
   display: flex;
   justify-content: center;
-  margin: 0 auto 34px;
+  margin-bottom: 50px;
 }
+
 .filter-menu + .filter-menu {
   margin-left: 8px;
 }
 .filter-btn {
-  padding: 6px 26px;
-  width: auto;
+  padding: 6px 22px;
   border-radius: 4px;
   text-align: center;
 
@@ -346,23 +342,20 @@ button {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
-.portfolio-samples {
+
+.portfolio-catalog {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.portfolio-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 370px;
 
-  background-color: var(--primary-white-color);
-  border: 1px solid var(--main-border-color);
+.portfolio-card {
+  width: 370px;
 }
 
 .portfolio-card-desc {
   padding: 20px 24px;
+  border: 1px solid var(--main-border-color);
 }
 
 .samples-img {
@@ -393,14 +386,7 @@ button {
   background: var(--primary-back-color);
 }
 
-.footer-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
 .logo-footer {
-  margin-bottom: 9px;
-
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
@@ -410,8 +396,15 @@ button {
   color: var(--primary-white-color);
 }
 
+.address {
+  margin-top: 20px;
+}
+
+.contacts-items + .contacts-items {
+  margin-top: 9px;
+}
+
 .address-foot {
-  font-style: normal;
   font-weight: 400;
   font-size: inherit;
   line-height: 1.71;
@@ -421,7 +414,6 @@ button {
 .contacts-foot {
   color: var(--primary-white-color);
   opacity: 60%;
-  font-style: normal;
   font-weight: 400;
   font-size: inherit;
   line-height: 1.71;
